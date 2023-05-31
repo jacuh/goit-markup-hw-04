@@ -28,6 +28,10 @@ a:visited {
   color: default;
 }
 
+svg {
+  cursor: pointer;
+}
+
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -47,6 +51,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 16px;
 }
 
 .header-contacts {
@@ -57,6 +62,7 @@ header {
 .header-left {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 header .logo-web {
@@ -273,8 +279,8 @@ header .logo-web {
   padding-block: 16px 30px;
 }
 
-.social-icon:hover svg,
-.social-icon:focus svg {
+.social-media a:hover svg,
+.social-media a:focus svg {
   background-color: #2196f3;
   border-radius: 50px;
   fill: white;
@@ -284,9 +290,9 @@ header .logo-web {
   fill: white;
 }
 
-.social-icon a:hover,
-.social-icon a:focus {
-  fill: white;
+.social-icon li:hover svg,
+.social-icon li:focus svg {
+  background-color: #2196f3;
 }
 
 .team h3 {
@@ -345,13 +351,18 @@ header .logo-web {
   color: #212121;
 }
 
-.clients li:hover svg {
+.clients li:hover svg,
+.clients li:focus svg {
   fill: #2196f3;
+}
+
+.clients li:hover,
+.clients li:focus {
+  border-color: #2196f3;
 }
 
 footer {
   box-sizing: border-box;
-  padding-left: 215px;
   padding-block: 60px;
   background: #2f303a;
 }
